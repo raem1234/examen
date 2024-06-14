@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store richard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://i.pinimg.com/236x/49/1f/02/491f028d39150e0fd05059dc0f15a1b6.jpg" type="image/x-icon">
+</head>
+<body class="bg-cover bg-center" style="background-image: url('https://i.pinimg.com/236x/45/2e/2d/452e2d89914ce44f4e445b50f18f67af.jpg')">
+
+    
+    <!-- Barra de navegación -->
+    <nav class="bg-black p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-lg font-bold">ʀɪᴄʜᴀʀᴅ 🆅🅾🅻🅴🆈
+
+            </div>
+           
+            <div>
+                <a href="#" class="text-white mx-2">Inicio</a>
+                <a href="#" class="text-white mx-2">Nosotros</a>
+                <a href="#" class="text-white mx-2">Productos</a>
+            </div>
+            
+            <div>
+                <button id="cart-button" class="text-white relative">
+                    <span class="material-icons">tus</span>
+                    <span id="cart-count" class="bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center absolute top-0 right-0">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!--  bienvenida -->
+    <header class="container mx-auto my-8 text-center " >
+        <h1 class="text-7xl font-bold ">𝖇𝖎𝖊𝖓𝖛𝖊𝖓𝖎𝖉𝖔𝖘 </h1>
+    </header>
+
+    <!-- Sección de productos -->
+    <section class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/49/1f/02/491f028d39150e0fd05059dc0f15a1b6.jpg" alt="Muñeuqras Nike" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Muñeuqras Nike</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2 bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Muñeuqras Nike', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/f0/63/93/f06393918ec5e8a9ed3b2aad267c8242.jpg" alt="Bolso Nike" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Bolso Nike</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Bolso Nike', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/18/5b/7b/185b7b2e6932bcd4619cdb22c5eec2d3.jpg" alt="Producto 1" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Proteccion Para Los Dedos</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Proteccion Dedos', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/49/1f/02/491f028d39150e0fd05059dc0f15a1b6.jpg" alt="Muñeuqras Nike" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Muñeuqras Nike</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2 bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Muñeuqras Nike', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/f0/63/93/f06393918ec5e8a9ed3b2aad267c8242.jpg" alt="Bolso Nike" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Bolso Nike</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Producto 1', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/18/5b/7b/185b7b2e6932bcd4619cdb22c5eec2d3.jpg" alt="Producto 1" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Proteccion Para Los Dedos</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Producto 1', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/49/1f/02/491f028d39150e0fd05059dc0f15a1b6.jpg" alt="Muñeuqras Nike" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Muñeuqras Nike</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2 bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Muñeuqras Nike', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/f0/63/93/f06393918ec5e8a9ed3b2aad267c8242.jpg" alt="Bolso Nike" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Bolso Nike</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Producto 1', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/18/5b/7b/185b7b2e6932bcd4619cdb22c5eec2d3.jpg" alt="Producto 1" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Proteccion Para Los Dedos</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Producto 1', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/49/1f/02/491f028d39150e0fd05059dc0f15a1b6.jpg" alt="Muñeuqras Nike" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Muñeuqras Nike</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2 bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Muñeuqras Nike', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/f0/63/93/f06393918ec5e8a9ed3b2aad267c8242.jpg" alt="Bolso Nike" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Bolso Nike</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Producto 1', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/18/5b/7b/185b7b2e6932bcd4619cdb22c5eec2d3.jpg" alt="Producto 1" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Proteccion Para Los Dedos</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Producto 1', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/49/1f/02/491f028d39150e0fd05059dc0f15a1b6.jpg" alt="Muñeuqras Nike" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Muñeuqras Nike</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2 bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Muñeuqras Nike', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/f0/63/93/f06393918ec5e8a9ed3b2aad267c8242.jpg" alt="Bolso Nike" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Bolso Nike</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Producto 1', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/18/5b/7b/185b7b2e6932bcd4619cdb22c5eec2d3.jpg" alt="Producto 1" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Proteccion Para Los Dedos</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Proteccion Dedos', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/d6/a1/bc/d6a1bcc0b5ed445c624cee91c120294d.jpg" alt="Producto 1" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Balon Volei Mikasa</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Balon Mikasa', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/474x/c4/a5/b8/c4a5b85ede8e7f937a6aed0658a2d982.jpg" alt="Producto 1" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Manillas de Volei</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Manillas de Volei', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/736x/2d/ca/b6/2dcab6949b6d1a1a55fea1d9cae60cd1.jpg" alt="Producto 1" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Zapatillas Acsis</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Zapatillas Acsis', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/f1/e4/0e/f1e40ea50ea48ae1d5f472bdec3ad77c.jpg" alt="Producto 1" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Tobilleras</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black justify-center text-white px-4 py-2 rounded" onclick="addToCart('Tobolleras', 10)">Comprar</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow-md" id="product-1">
+            <img src="https://i.pinimg.com/236x/ba/83/06/ba83062632e659b700b890e1e0d78375.jpg" alt="Producto 1" class="w-full h-40 object-cover mb-4">
+            <h2 class="text-lg font-semibold">Cinta elastica kineseologia</h2>
+            <p class="text-gray-700">$10.00</p>
+            <button class="mt-2  bg-black text-center text-white px-4 py-2 rounded" onclick="addToCart('Cinta elastica kineseologia', 10)">Comprar</button>
+        </div>
+        <!-- Agrega más productos aquí -->
+    </section>
+
+    <!-- Modal de confirmación -->
+    <div id="confirmation-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+        <div class="bg-white p-4 rounded shadow-md text-center">
+            <p>Agregado exitosamente.</p>
+            <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded" onclick="closeConfirmationModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Carrito de compras -->
+    <div id="cart-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+        <div class="bg-white p-4 rounded shadow-md w-1/3">
+            <h2 class="text-lg font-semibold">tus productos</h2>
+            <div id="cart-items" class="my-4"></div>
+            <div class="flex justify-between items-center">
+                <span>Total: $<span id="cart-total">0.00</span></span>
+                <button class="bg-red-500 text-white px-4 py-2 rounded" onclick="closeCartModal()">Cerrar</button>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            
+            <div>
+              <h3 class="text-lg font-bold mb-4">Nuestra Tienda</h3>
+              <p class="text-gray-400">Descubre las últimas tendencias en moda y encuentra tu estilo único con nuestra amplia selección de ropa para voley y accesorios.</p>
+            </div>
+            <!-- Links -->
+            <div>
+              <h3 class="text-lg font-bold mb-4">Enlaces</h3>
+              <ul>
+                <li><a href="#" class="text-gray-400 hover:text-white">Inicio</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Tienda</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Contacto</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-bold mb-4">Servicio al Cliente</h3>
+              <ul>
+                
+                <li><a href="#" class="text-gray-400 hover:text-white">Envíos y Devoluciones</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Términos y Condiciones</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Política de Privacidad</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-bold mb-4">Suscríbete</h3>
+              <p class="text-gray-400 mb-4">Suscríbete para que recibe las últimas actualizaciones y ofertas especiales directamente en tu bandeja de entrada.</p>
+              <form>
+                <input type="email" placeholder="Tu correo electrónico" class="w-full p-2 mb-2 rounded bg-gray-700 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                <button type="submit" class="w-full py-2 bg-black hover:bg-pink-600 text-white rounded">Suscribirse</button>
+              </form>
+            </div>
+          </div>
+          <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400">
+            &copy; 2024 ʀɪᴄʜᴀʀᴅ 🆅🅾🅻🅴🆈 .
+          </div>
+        </div>
+      </footer>
+      
+
+    <script src="tres.js"></script>
+</body>
+</html>
